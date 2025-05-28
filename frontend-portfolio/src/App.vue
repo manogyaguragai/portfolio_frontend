@@ -13,18 +13,18 @@
               <a v-for="link in navLinks" :key="link.name" :href="link.href" class="nav-link">
                 {{ link.name }}
               </a>
-              <button @click="toggleDarkMode" class="theme-toggle" aria-label="Toggle dark mode">
+              <!-- <button @click="toggleDarkMode" class="theme-toggle" aria-label="Toggle dark mode">
                 <span v-if="darkMode">☀️</span>
                 <span v-else>🌙</span>
-              </button>
+              </button> -->
             </div>
           </div>
 
           <div class="nav-mobile">
-            <button @click="toggleDarkMode" class="theme-toggle mobile-theme" aria-label="Toggle dark mode">
+            <!-- <button @click="toggleDarkMode" class="theme-toggle mobile-theme" aria-label="Toggle dark mode">
               <span v-if="darkMode">☀️</span>
               <span v-else>🌙</span>
-            </button>
+            </button> -->
             <button @click="toggleMenu" class="menu-toggle" aria-expanded="false">
               <span class="sr-only">Open main menu</span>
               <span v-if="isOpen">✕</span>
